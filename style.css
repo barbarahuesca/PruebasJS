@@ -1,0 +1,12 @@
+.claseDeMaquillaje{
+    border: 2px solid pink;
+    margin: 20px;
+}
+div img{
+    width: 300px;
+    height: 300px;
+}
+ div{
+    width: 90%;
+    font-size: 30px;
+ }
