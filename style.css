@@ -1,11 +1,21 @@
-.claseDeMaquillaje{
-    border: 2px solid pink;
-    margin: 20px;
+#contenedor-de-clases{
+    display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin:2%;
+        overflow: hidden;
 }
 div img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 1px 10px 0px rgb(75, 57, 68);
 }
- div{
-    width: 90%;
+.contenido{
+    padding: 20px;  
+    border: 4px black;
+}
+
+body {
+    background-image: linear-gradient(to right,rgb(228, 155, 206),  rgb(236, 190, 223) 40%, rgb(241, 233, 187), rgb(245, 166, 205));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
