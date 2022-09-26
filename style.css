@@ -41,7 +41,9 @@ body form label{
     justify-content: center;
 } 
 
-
+.swal-overlay {
+    background-color: rgba(174, 17, 106, 0.564);
+  }
 
 
 body {

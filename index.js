@@ -24,8 +24,9 @@ function manejadorFormularioUsuario(e) {
    const turnos = JSON.parse(localStorage.getItem(nombreUsuario));
  
    if (turnos == null) {
-      listadodeTurnos.innerHTML = "<h1>No hay turnos para mostrar</h1>"
+      swal("Agenda Vacia", "No hay ningun turno registrado para este cliente", "error");
     } else {
+      swal("Agenda Abierta", "Este cliente cuenta con turnos ya registrados", "success");
       mostrarTurnos(turnos);
     }
     mostrarPanel();
@@ -51,6 +52,7 @@ function crearBotonEliminar(turno){
    const botonBorrar = document.createElement("button");// <button>Borrar</button>
      botonBorrar.innerText = "Borrar";
      botonBorrar.addEventListener("click", () => {
+       swal("Agenda Vacia", "No hay ningun turno registrado para este cliente", "error")
        eliminarTurno(turno);
      })
      return botonBorrar;
@@ -60,7 +62,7 @@ function mostrarPanel() {
    const opciones = document.getElementById("opciones");
  
    opciones.innerHTML =
-     `<h3>Agenda de turnos para ${nombreUsuario} <3 </h3>
+     `<h3>Agenda de turnos para ${nombreUsuario}</h3>
      <form id="formulario-turno">
        <input type="text" id="nombre" placeholder="Apellido">
        <input type="number" id="numero" placeholder="Numero de Clase">
