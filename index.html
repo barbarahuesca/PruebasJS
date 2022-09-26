@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-    
+    <link rel="stylesheet" href="./style.css" /> 
+    <script src="./index.js" defer></script>
+    <title>Repaso General</title>
 </head>
 
- <body>
+<body>
+    <h1>Agenda de Turnos por Clienta</h1>
 
- 
- <h1> Clases de Automaquillaje</h1>
- <h3>Detalle e informacion sobre nuestras clases de maquillaje social y artistico 💄:</h3>
+    <form id="formulario-usuario">
+        <label for="user">Ingresar nombre de la clienta para ver su agenda personal</label>
+        <input id="user" type="text" placeholder="Nombre">
+        <input type="submit" value="Buscar">
+    </form>
 
- <section>
-    <div id="contenedor-de-clases"> 
-      <!-- <div class="contenedor-de-clase1">   </div>
-      <div class="contenedor-de-clases2">   </div> -->
-      
-    </div>
-</section>
+    <hr>
 
+    <div id="opciones"></div>
+    <ul id="listadodeTurnos">
+    </ul>
 
- <script src="index.js" ></script>
- 
-
-    </body>
-
+</body>
 
 </html>

@@ -1,25 +1,53 @@
-#contenedor-de-clases{
-    display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows:  1fr;
-        margin:2%;
-        overflow: hidden;
-}
-div img{
-    width: 400px;
-    height: 400px;
-    box-shadow: 0px 1px 10px 0px rgb(75, 57, 68);
-}
-.contenido{
-    padding: 20px;  
-    border: 4px black;
+body {
+    padding: 30px;
+    border: black;
 }
 
-.visible {  
-    display: none;
- }
+body h1{
+   display: flex;
+   justify-content: center;
+
+}
+body form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    
+
+}
+body form input{
+    margin: 20px;
+}
+body form label{
+    margin: 20px;
+}
+
+#opciones{
+    padding: none;
+}
+
+#opciones h3{
+    display: flex;
+    justify-content: center;
+}
+
+#opciones input{
+    padding: 7px;
+    
+}
+#listadodeTurnos{
+    display: flex;
+    justify-content: center;
+} 
+
+
+
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: linear-gradient(to right,rgb(228, 155, 206),  rgb(236, 190, 223) 40%, rgb(241, 233, 187), rgb(245, 166, 205));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
