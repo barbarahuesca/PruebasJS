@@ -39,8 +39,8 @@ function mostrarTurnos(turnos) {
    turnos.forEach(turno => {
      let li = document.createElement("li");
      li.innerHTML = `
-     <hr> ${turno.nombre.toUpperCase()} - ${turno.numero} - 
-     ${turno.tipo} - ${turno.dia} - ${turno.hora}
+     <hr> Apellido: ${turno.nombre.toUpperCase()} // Clase Numero  ${turno.numero} // Tipo de Maquillaje:
+     ${turno.tipo} // Fecha: ${turno.dia} // Horario: ${turno.hora}
      `;
      const botonBorrar = crearBotonEliminar(turno);
      li.appendChild(botonBorrar);
@@ -52,27 +52,27 @@ function crearBotonEliminar(turno){
    const botonBorrar = document.createElement("button");// <button>Borrar</button>
      botonBorrar.innerText = "Borrar";
      botonBorrar.addEventListener("click", () => {
-       swal("Agenda Vacia", "No hay ningun turno registrado para este cliente", "error")
+       swal("Turno Eliminado", "El turno ha sido eliminado de la agenda", "error")
        eliminarTurno(turno);
      })
      return botonBorrar;
 }
  
 function mostrarPanel() {
-   const opciones = document.getElementById("opciones");
- 
-   opciones.innerHTML =
-     `<h3>Agenda de turnos para ${nombreUsuario}</h3>
-     <form id="formulario-turno">
-       <input type="text" id="nombre" placeholder="Apellido">
-       <input type="number" id="numero" placeholder="Numero de Clase">
-       <input type="text" id="tipo" placeholder="Tipo de Maquillaje">
-       <input type="text" id="dia" placeholder="Dia">
-       <input type="text" id="hora" placeholder="Hora">
-       <button type="submit">Agregar turno</button>
-     </form>`;
- 
-   document.getElementById("formulario-turno").addEventListener("submit", agregarTurno);
+  const opciones = document.getElementById("opciones");
+
+  opciones.innerHTML =
+    `<h3>Agenda de turnos para ${nombreUsuario} : </h3>
+    <form id="formulario-turno">
+      <input type="text" id="nombre" placeholder="Apellido">
+      <input type="number" id="numero" placeholder="Numero de Clase">
+      <input type="text" id="tipo" placeholder="Tipo - Social o Artistico">
+      <input type="text" id="dia" placeholder="Fecha">
+      <input type="text" id="hora" placeholder="Horario">
+      <button type="submit">Agregar turno</button>
+    </form>`;
+
+  document.getElementById("formulario-turno").addEventListener("submit", agregarTurno);
 }
 
  

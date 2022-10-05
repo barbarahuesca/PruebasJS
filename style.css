@@ -1,27 +1,70 @@
-body {
+
+/*INDEX*/
+
+.encabezadoHome img{
+   border-radius: 50%;
+   margin: 0%;
+   border-style: solid; border-width: 2px; border-color: black;
+}
+
+.encabezadoHome p{
+   margin-top: 20px;
+   color: white;
+   font-size: 30px;
+}
+
+.encabezadoHome{
+     background-image: url(./imagenes/fondo\ encabezado\ -\ Copy.jpeg); 
+     background-position: center;
+     height: 350px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+} 
+.mainForm{
+
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 45%;
+    background-color: rgba(173, 130, 188, 0.622);
+    box-shadow: 5px 5px 8px rgba(130, 89, 114, 0.884);
+}
+.mainForm {
     padding: 30px;
-    border: black;
+    border: 40px black;
+    width: 30%;
 }
-
-body h1{
-   display: flex;
+.mainForm h1{
+    display: flex;
    justify-content: center;
+   align-items: center;
+    font-size: larger;
 
 }
-body form{
+
+/* body form{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    
-
-}
+} */
 body form input{
     margin: 20px;
+    padding: 7px;
+  
 }
-body form label{
-    margin: 20px;
+#formulario-usuario{
+    display: flex;
+    flex-direction: column;
 }
+#formulario-usuario input{
+    border-radius: 4px;
+    border: 2px black;
+    box-shadow: 0px 1px 10px 0px rgba(75, 57, 68, 0.545);
+    padding: 10px;
+}
+
 
 #opciones{
     padding: none;
@@ -36,20 +79,63 @@ body form label{
     padding: 7px;
     
 }
+
+#opciones button{
+    padding: 7px;
+}
+
 #listadodeTurnos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 60px;
 } 
+
+#listadodeTurnos {
+    font-size: larger;
+}
+#listadodeTurnos button{
+    margin-left: 20px;
+    padding: 7px;
+    border-radius: 4px;
+}
 
 .swal-overlay {
     background-color: rgba(174, 17, 106, 0.564);
-  }
+}
 
+#formulario-turno input{
+
+    border-radius: 4px;
+    border: 2px black;
+    box-shadow: 0px 1px 10px 0px rgba(75, 57, 68, 0.545);
+    margin: 30px;
+    margin left: 20px;
+}
+
+#user{
+    border-radius: 4px;
+    border: 2px black;
+    box-shadow: 0px 1px 10px 0px rgba(75, 57, 68, 0.545);
+}
+.dropdown button{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    border-radius: 4px;
+    border: 2px black;
+    box-shadow: 0px 1px 10px 0px rgba(75, 57, 68, 0.545);
+}
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to right,rgb(228, 155, 206),  rgb(236, 190, 223) 40%, rgb(241, 233, 187), rgb(245, 166, 205));
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Bona Nova', serif;
  }
+ 
