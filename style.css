@@ -137,5 +137,27 @@ body {
     justify-content: center;
     background-image: linear-gradient(to right,rgb(228, 155, 206),  rgb(236, 190, 223) 40%, rgb(241, 233, 187), rgb(245, 166, 205));
     font-family: 'Bona Nova', serif;
- }
+}
+
+@media screen and (max-width: 991px) {
+    div .mainForm {
+        margin: none;
+        width: 90%;
+        padding: auto;
+        
+       
+    }
+    .encabezadoHome{
+        height: 300px;
+        background-size: cover ; 
+    }
+    .encabezadoHome img{
+        height: 150px;
+        width: 150px;
+    }
+    .encabezadoHome h2 p {
+        font-size: 20px;
+    } 
+    
+}
  
